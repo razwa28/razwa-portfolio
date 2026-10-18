@@ -22,9 +22,9 @@ import {
 
 const profile = {
   name: 'Muhammad Razwa Rizky Syakir',
-  nickname: 'razwa.dev',
+  nickname: 'razwa',
   role: 'Frontend Developer',
-  email: 'emailkamu@example.com',
+  email: 'razwarizky13@gmail.com',
   github: 'https://github.com/razwa28',
   instagram: 'https://www.instagram.com/awzar.r/',
   linkedin: 'https://id.linkedin.com/in/razwa-rizky-82b71941a',
