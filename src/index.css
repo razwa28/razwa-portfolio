@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* ========================================
+   PENGATURAN DASAR
+======================================== */
+
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #080910;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: white;
+  background: #7c3aed;
+}
+
+/* ========================================
+   DARK MODE
+   Tampilan default portofolio kamu
+======================================== */
+
+.dark-mode {
+  color-scheme: dark;
+  background-color: #080910;
+  color: #f4f4f5;
+}
+
+.dark-mode header {
+  background-color: rgb(8 9 16 / 85%);
+}
+
+.dark-mode article {
+  background-color: rgb(16 17 27 / 70%);
+}
+
+.dark-mode footer {
+  color: #71717a;
+}
+
+/* ========================================
+   LIGHT MODE
+======================================== */
+
+.light-mode {
+  color-scheme: light;
+  background-color: #f8fafc !important;
+  color: #18181b !important;
+}
+
+/* Background seluruh halaman */
+body:has(.light-mode) {
+  background-color: #f8fafc;
+}
+
+/* Navbar */
+.light-mode header {
+  background-color: rgb(248 250 252 / 92%) !important;
+  border-color: #e2e8f0 !important;
+  color: #18181b !important;
+}
+
+/* Section dan area utama */
+.light-mode main,
+.light-mode section {
+  color: #18181b;
+}
+
+/* Judul utama dan heading */
+.light-mode h1,
+.light-mode h2,
+.light-mode h3 {
+  color: #18181b;
+}
+
+/* Warna teks Tailwind */
+.light-mode .text-white,
+.light-mode .text-zinc-100 {
+  color: #18181b !important;
+}
+
+.light-mode .text-zinc-200 {
+  color: #27272a !important;
+}
+
+.light-mode .text-zinc-300 {
+  color: #3f3f46 !important;
+}
+
+.light-mode .text-zinc-400 {
+  color: #52525b !important;
+}
+
+.light-mode .text-zinc-500 {
+  color: #64748b !important;
+}
+
+/* Kartu proyek dan kartu tentang saya */
+.light-mode article,
+.light-mode .bg-\[\#10111b\]\/70,
+.light-mode .bg-\[\#10111b\]\/95 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 8px 30px rgb(15 23 42 / 5%);
+}
+
+/* Panel kecil */
+.light-mode .bg-white\/\[0\.025\],
+.light-mode .bg-white\/\[0\.03\] {
+  background-color: #f1f5f9 !important;
+}
+
+/* Editor kode di hero */
+.light-mode .font-mono .text-zinc-400 {
+  color: #475569 !important;
+}
+
+.light-mode .font-mono .text-zinc-500 {
+  color: #64748b !important;
+}
+
+/* Navbar, tombol, dan garis pemisah */
+.light-mode .border-white\/10,
+.light-mode .border-white\/15,
+.light-mode .border-white\/\[0\.08\],
+.light-mode .border-white\/\[0\.06\] {
+  border-color: #e2e8f0 !important;
+}
+
+/* Ikon dan teks aksen tetap berwarna */
+.light-mode .text-violet-300,
+.light-mode .text-violet-400 {
+  color: #7c3aed;
+}
+
+.light-mode .text-violet-200 {
+  color: #6d28d9;
+}
+
+.light-mode .text-blue-400 {
+  color: #2563eb;
+}
+
+.light-mode .text-emerald-300 {
+  color: #047857;
+}
+
+/* Link saat diarahkan */
+.light-mode a:hover {
+  transition: color 0.2s ease;
+}
+
+/* Footer */
+.light-mode footer {
+  background-color: #f8fafc;
+  border-color: #e2e8f0 !important;
+}
+
+/* Transisi pergantian tema */
+.dark-mode,
+.light-mode {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
